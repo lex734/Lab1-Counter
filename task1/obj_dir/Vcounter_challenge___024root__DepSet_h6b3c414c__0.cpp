@@ -21,11 +21,13 @@ void Vcounter_challenge___024root___eval(Vcounter_challenge___024root* vlSelf) {
     Vcounter_challenge__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vcounter_challenge___024root___eval\n"); );
     // Body
-    if (((IData)(vlSelf->clk) & (~ (IData)(vlSelf->__Vclklast__TOP__clk)))) {
+    if ((((IData)(vlSelf->clk) & (~ (IData)(vlSelf->__Vclklast__TOP__clk))) 
+         | ((IData)(vlSelf->rst) & (~ (IData)(vlSelf->__Vclklast__TOP__rst))))) {
         Vcounter_challenge___024root___sequent__TOP__0(vlSelf);
     }
     // Final
     vlSelf->__Vclklast__TOP__clk = vlSelf->clk;
+    vlSelf->__Vclklast__TOP__rst = vlSelf->rst;
 }
 
 #ifdef VL_DEBUG

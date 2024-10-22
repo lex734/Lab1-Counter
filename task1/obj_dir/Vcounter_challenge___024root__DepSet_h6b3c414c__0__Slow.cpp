@@ -12,6 +12,7 @@ VL_ATTR_COLD void Vcounter_challenge___024root___eval_initial(Vcounter_challenge
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vcounter_challenge___024root___eval_initial\n"); );
     // Body
     vlSelf->__Vclklast__TOP__clk = vlSelf->clk;
+    vlSelf->__Vclklast__TOP__rst = vlSelf->rst;
 }
 
 VL_ATTR_COLD void Vcounter_challenge___024root___eval_settle(Vcounter_challenge___024root* vlSelf) {

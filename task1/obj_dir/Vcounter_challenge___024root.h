@@ -18,6 +18,7 @@ class Vcounter_challenge___024root final : public VerilatedModule {
     VL_IN8(en,0,0);
     VL_OUT8(count,7,0);
     CData/*0:0*/ __Vclklast__TOP__clk;
+    CData/*0:0*/ __Vclklast__TOP__rst;
 
     // INTERNAL VARIABLES
     Vcounter_challenge__Syms* const vlSymsp;
