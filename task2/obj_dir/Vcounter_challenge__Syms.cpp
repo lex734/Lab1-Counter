@@ -1,16 +1,16 @@
 // Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Symbol table implementation internals
 
-#include "Vcounter__Syms.h"
-#include "Vcounter.h"
-#include "Vcounter___024root.h"
+#include "Vcounter_challenge__Syms.h"
+#include "Vcounter_challenge.h"
+#include "Vcounter_challenge___024root.h"
 
 // FUNCTIONS
-Vcounter__Syms::~Vcounter__Syms()
+Vcounter_challenge__Syms::~Vcounter_challenge__Syms()
 {
 }
 
-Vcounter__Syms::Vcounter__Syms(VerilatedContext* contextp, const char* namep, Vcounter* modelp)
+Vcounter_challenge__Syms::Vcounter_challenge__Syms(VerilatedContext* contextp, const char* namep, Vcounter_challenge* modelp)
     : VerilatedSyms{contextp}
     // Setup internal state of the Syms class
     , __Vm_modelp{modelp}
